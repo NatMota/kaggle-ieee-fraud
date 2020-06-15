@@ -35,7 +35,9 @@ With the raw dataset and minimal manipulation it takes 30 minutes to train on th
 
 ## Notes
 
-This method got 90% accuracy on Kaggle - it missed 10% of frauds so to say. As of June 2020 this is on the top 66% of the leaderboard, which means most of the work went into optimizing the remaining 8% - and the top submission had AUC of 94.6$. So it's a good result with minimal configuration. 
+This method got 90% accuracy on Kaggle - it missed 10% of frauds so to say. As of June 2020 this is on the top 66% of the leaderboard, which means most of the work went into optimizing the remaining 8% - and the top submission had AUC of 94.6%. So it's a good result with minimal configuration.
+
+The features are anonymized for the most part with some efforts on the Kaggle forums revealing part of them. Having in mind we only looked at numerical features, the shap_values plot shows that the transaction amount was an example of a useful predictor for this model. As mentioned by the creators of the library, it might not show a direct causal explanation but graphically showing what the model is focusing on is a welcome addition to the pipeline. 
 
 Extensions:
 
@@ -44,4 +46,4 @@ Extensions:
 * Dataset enrichment from other sources
 * Comparison with other boosting models
 * Bagging
-* Scaling sampling for balanced dataset with k-folds averaging 
+* Scaling sampling for balanced dataset with k-folds averaging
