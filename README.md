@@ -27,6 +27,7 @@ pandas
 numpy
 itertools
 catboost
+shap
 ```
 
 This was trained on a Google Cloud N2 machine with 8 cores 16GB ram, which is the most powerfull VM you can run within the free $300 credits. Creating it as a Windows VM is more expensive but is easiest to interface with for Anaconda Python setup and training data transfer with Google Drive.
