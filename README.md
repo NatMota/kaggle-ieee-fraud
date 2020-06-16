@@ -1,8 +1,8 @@
 # IEEE-Fraud Kaggle Challenge with CatBoost
 
-AKA submitting a solution to Kaggle for the first time, on a Saturday meetup.
+AKA submitting a solution to Kaggle for the first time, on a Saturday meetup. The dataset comprises purchases which are labelled as being authorised or not (fraud) when reported. 
 
-The main goal of this was to merge the raw data, use only data types immediately usable in the model, generate a list of propensities for fraud on each transaction from the model and submission. I extended it with a graphical finish by including the SHAP library, which plays well with Catboost. 
+The main goal of this was to merge the raw data, use only data types immediately usable in the model, generate a list of propensities for fraud on each transaction from the model and submission. I extended it with a graphical finish by including the SHAP library, which plays well with Catboost.
 
 ## Useful Links
 
@@ -36,7 +36,7 @@ With the raw dataset and minimal manipulation it takes 30 minutes to train on th
 
 ## Notes
 
-This method got 90% accuracy on Kaggle - it missed 10% of frauds so to say. As of June 2020 this is on the top 66% of the leaderboard, which means most of the work went into optimizing the remaining 8% - and the top submission had AUC of 94.6%. So it's a good result with minimal configuration.
+This method got 90% accuracy on Kaggle - it missed 10% of frauds so to say. As of June 2020 this is on the top 66% of the leaderboard, which means most of the work went into optimizing the remaining 8% - and the top submission had AUC of 94.6%. So it's a good result with minimal configuration. In production, one would have to understand the significance of mislabelling a result from data with a very low amount of true positives (i.e. it was fraudulent) and tune the model acordingly.
 
 The features are anonymized for the most part with some efforts on the Kaggle forums revealing part of them. Having in mind we only looked at numerical features, the shap_values plot shows that the transaction amount was an example of a useful predictor for this model. As mentioned by the creators of the library, it might not show a direct causal explanation but graphically showing what the model is focusing on is a welcome addition to the pipeline. 
 
