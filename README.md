@@ -1,6 +1,6 @@
 # IEEE-Fraud Kaggle Challenge with CatBoost
 
-AKA submitting a solution to Kaggle on a Saturday meetup.
+AKA submitting a solution to Kaggle for the first time, on a Saturday meetup.
 
 The main goal of this was to merge the raw data, use only data types immediately usable in the model, generate a list of propensities for fraud on each transaction from the model and submission. I extended it with a graphical finish by including the SHAP library, which plays well with Catboost. 
 
