@@ -16,7 +16,7 @@ The main goal of this was to merge the raw data, use only data types immediately
 
 ## Getting Started
 
-The whole project can be followed on the [Fraud CatBoost Notebook](https://github.com/NatMota/kaggle-ieee-fraud/blob/master/Fraud%20Catboost.ipynb)
+The whole project can be followed on the [Fraud CatBoost Notebook](https://github.com/NatMota/kaggle-ieee-fraud/blob/master/Fraud%20Catboost.ipynb) using Python.
 
 ### Prerequisites
 
@@ -30,7 +30,7 @@ catboost
 shap
 ```
 
-This was trained on a Google Cloud N2 machine with 8 cores 16GB ram, which is the most powerfull VM you can run within the free $300 credits. Creating it as a Windows VM is more expensive but is easiest to interface with for Anaconda Python setup and training data transfer with Google Drive.
+This was trained on a Google Cloud N2 machine with 8 cores 16GB ram, which is the most powerfull VM you can run within the free $300 credits. Creating it as a Windows VM is more expensive but is easiest to interface with coming from a Windows user, for Anaconda's Python setup and training data transfer with Google Drive.
 
 With the raw dataset and minimal manipulation it takes 30 minutes to train on the setup above. This can be improved with feature selection, variable downcasting and converting back to numpy arrays once you're happy with the inital shaping. The raw joined data is really large and takes a lot of memory to train on.
 
